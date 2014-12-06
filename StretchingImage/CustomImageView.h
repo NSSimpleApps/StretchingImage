@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CustomImageView.h
 //  StretchingImage
 //
 //  Created by NSSimpleApps on 01.12.14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CustomImageView : UIImageView
 
 @end
-

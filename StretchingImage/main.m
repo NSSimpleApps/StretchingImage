@@ -2,7 +2,7 @@
 //  main.m
 //  StretchingImage
 //
-//  Created by neo on 01.12.14.
+//  Created by NSSimpleApps on 01.12.14.
 //  Copyright (c) 2014 NSSimpleApps. All rights reserved.
 //
 

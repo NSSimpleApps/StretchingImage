@@ -14,6 +14,8 @@
 		B5E825481A2CA40100E93BEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E825471A2CA40100E93BEE /* Images.xcassets */; };
 		B5E8254B1A2CA40100E93BEE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E825491A2CA40100E93BEE /* LaunchScreen.xib */; };
 		B5E825571A2CA40100E93BEE /* StretchingImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E825561A2CA40100E93BEE /* StretchingImageTests.m */; };
+		B5E825611A2CA50900E93BEE /* cat1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5E825601A2CA50900E93BEE /* cat1.jpg */; };
+		B5E825641A2CAC0900E93BEE /* CustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E825631A2CAC0900E93BEE /* CustomImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		B5E825501A2CA40100E93BEE /* StretchingImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StretchingImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E825551A2CA40100E93BEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5E825561A2CA40100E93BEE /* StretchingImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StretchingImageTests.m; sourceTree = "<group>"; };
+		B5E825601A2CA50900E93BEE /* cat1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat1.jpg; sourceTree = "<group>"; };
+		B5E825621A2CAC0900E93BEE /* CustomImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImageView.h; sourceTree = "<group>"; };
+		B5E825631A2CAC0900E93BEE /* CustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,9 @@
 		B5E825391A2CA40100E93BEE /* StretchingImage */ = {
 			isa = PBXGroup;
 			children = (
+				B5E825601A2CA50900E93BEE /* cat1.jpg */,
+				B5E825621A2CAC0900E93BEE /* CustomImageView.h */,
+				B5E825631A2CAC0900E93BEE /* CustomImageView.m */,
 				B5E8253E1A2CA40100E93BEE /* AppDelegate.h */,
 				B5E8253F1A2CA40100E93BEE /* AppDelegate.m */,
 				B5E825411A2CA40100E93BEE /* ViewController.h */,
@@ -199,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E825611A2CA50900E93BEE /* cat1.jpg in Resources */,
 				B5E825461A2CA40100E93BEE /* Main.storyboard in Resources */,
 				B5E8254B1A2CA40100E93BEE /* LaunchScreen.xib in Resources */,
 				B5E825481A2CA40100E93BEE /* Images.xcassets in Resources */,
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5E825431A2CA40100E93BEE /* ViewController.m in Sources */,
+				B5E825641A2CAC0900E93BEE /* CustomImageView.m in Sources */,
 				B5E825401A2CA40100E93BEE /* AppDelegate.m in Sources */,
 				B5E8253D1A2CA40100E93BEE /* main.m in Sources */,
 			);
