@@ -12,7 +12,6 @@
 
 @property (assign, nonatomic) CGFloat angle;
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end
 
 @implementation ViewController
@@ -70,14 +69,16 @@
         animation.duration = 1;
         animation.removedOnCompletion = YES;
         animation.fillMode = kCAFillModeForwards;
-            
+        [animation setValue:sender.view forKey:@"imageView"];
+        
         [sender.view.layer addAnimation:animation forKey:@"bouncing"];
     }
 }
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
     
-    self.imageView.layer.transform = CATransform3DIdentity;
+    UIView *view = [anim valueForKey:@"imageView"];
+    view.layer.transform = CATransform3DIdentity;
 }
 
 - (CATransform3D)transformWithAngle:(CGFloat)angle scale:(CGFloat)scale {
