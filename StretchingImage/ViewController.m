@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <CAAnimationDelegate>
 
 @property (assign, nonatomic) CGFloat angle;
 
@@ -21,26 +21,21 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (IBAction)handlePinchGesture:(UIPinchGestureRecognizer *)sender {
         
-    if ([sender state] == UIGestureRecognizerStateBegan) {
+    if (sender.state == UIGestureRecognizerStateBegan) {
             
         CGPoint firstPoint = [sender locationOfTouch:0 inView:sender.view];
         CGPoint secondPoint = [sender locationOfTouch:1 inView:sender.view];
         self.angle = atan2f(secondPoint.y - firstPoint.y, secondPoint.x - firstPoint.x);
             
-    } else if ([sender state] == UIGestureRecognizerStateChanged) {
+    } else if (sender.state == UIGestureRecognizerStateChanged) {
             
         CGFloat scale = sender.scale;
         sender.view.layer.transform = [self transformWithAngle:self.angle
                                                          scale:scale];
             
-    } else if ([sender state] == UIGestureRecognizerStateEnded) {
+    } else if (sender.state == UIGestureRecognizerStateEnded) {
             
         CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
         animation.delegate = self;
